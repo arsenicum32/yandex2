@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  script(src='/js/students.js')
+  form(method="post", action="/users/wt",target="_blank")
+    input(name="name", placeholder="имя")
+    input(name="surname", placeholder="фамилия")
+    input(name="love", placeholder="любимый куратор id")
+    button(type="submit") создать
+  h1 студенты:
+  .block

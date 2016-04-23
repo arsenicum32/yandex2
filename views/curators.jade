@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  script(src='/js/curators.js')
+  form(method="post", action="/curators/wt",target="_blank")
+    input(name="name", placeholder="имя")
+    input(name="surname", placeholder="фамилия")
+    input(name="love", placeholder="любимый студент id")
+    button(type="submit") создать
+  h1 курирующие кураторы:
+  .block
